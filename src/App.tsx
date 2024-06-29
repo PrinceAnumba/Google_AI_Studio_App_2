@@ -31,8 +31,7 @@ import {
   AlertDialogTrigger,
 } from "./components/ui/alert-dialog";
 
-function App() {
-  const [count, setCount] = useState(0);
+function App() { 
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
