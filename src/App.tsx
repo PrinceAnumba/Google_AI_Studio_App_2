@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { Button } from "@/components/ui/button"
+import { Button } from "./components/ui/button"
 import { ThemeProvider } from "./components/theme-provider";
 import { ModeToggle } from "./components/mode-toggle";
 import {
@@ -8,7 +8,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "./components/ui/accordion";
 import {
   Drawer,
   DrawerClose,
@@ -18,7 +18,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer";
+} from "./components/ui/drawer";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -29,7 +29,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+} from "./components/ui/alert-dialog";
 
 function App() {
   const [count, setCount] = useState(0);
