@@ -36,6 +36,7 @@ import {
   InputOTPSeparator,
   InputOTPSlot,
 } from "./components/ui/input-otp";
+import { Skeleton } from "./components/ui/skeleton";
 
 
 function App() { 
@@ -118,7 +119,7 @@ function App() {
           </AlertDialogContent>
         </AlertDialog>
       </div>
-      <div className="">
+      <div className="flex justify-center my-8">
         <InputOTP maxLength={6}>
           <InputOTPGroup>
             <InputOTPSlot index={0} />
@@ -132,6 +133,15 @@ function App() {
             <InputOTPSlot index={5} />
           </InputOTPGroup>
         </InputOTP>
+      </div>
+      <div className="flex justify-center">
+        <div className="flex items-center space-x-4">
+          <Skeleton className="h-12 w-12 rounded-full" />
+          <div className="space-y-2">
+            <Skeleton className="h-4 w-[250px]" />
+            <Skeleton className="h-4 w-[200px]" />
+          </div>
+        </div>
       </div>
     </ThemeProvider>
   );
