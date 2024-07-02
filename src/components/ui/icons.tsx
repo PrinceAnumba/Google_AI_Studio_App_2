@@ -155,4 +155,14 @@ export const Icons = {
       <path d="M12 4l-6 6h4v6h4v-6h4l-6-6z" />
     </svg>
   ),
+  aiStars: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 64 64"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M32 49.9l-14.6 8.5 3.9-16.3-13-11.4 16.6-1.4L32 14.1l6.1 15.2 16.6 1.4-13 11.4 3.9 16.3L32 49.9zM32 43.2l10.1 5.9-2.7-11.4 9.1-8L38.5 27l-6.5-16.1L25.5 27 15.5 30.7l9.1 8-2.7 11.4L32 43.2z" />
+    </svg>
+  ),
 };
