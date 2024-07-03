@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Icons } from "./ui/icons";
 import { Button } from "./ui/button";
 import { Moon, Sun } from "lucide-react";
@@ -22,7 +22,7 @@ function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button className="sm:text-xs" variant="">
+          <Button className="sm:text-xs" >
             <Icons.gitHub className="w-6 mr-2 sm:w-4" />
             <span className="sm:hidden">Source Code</span>
           </Button>

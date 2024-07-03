@@ -6,7 +6,6 @@ import Hero from "./components/hero";
 import InputBox from "./components/inputBox";
 import Footer from "./components/footer";
 import { Toaster } from "./components/ui/toaster";
-import { Icons } from "./components/ui/icons";
 
 
 function App() { 
