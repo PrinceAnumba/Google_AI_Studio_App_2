@@ -1,31 +1,32 @@
-import React from 'react'
+import React from "react";
 import { Icons } from "./ui/icons";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import { Moon, Sun } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { useTheme } from "@/components/theme-provider";
+} from "./ui/dropdown-menu";
+import { useTheme } from "./theme-provider";
 
-
-
-
-
-function Navbar () {
+function Navbar() {
   const { setTheme } = useTheme();
-
 
   return (
     <div className="flex flex-row justify-between items-center sticky top-8 bg-inherit">
-      <Icons.aiStars className="w-12" />
-      <div className="flex items-center gap-8">
-        <Button variant="">
-          <Icons.gitHub className="w-6 mr-2" />
-          Source Code
-        </Button>
+      <Icons.aiStars className="w-12 sm:w-8" />
+      <div className="flex items-center gap-8 sm:gap-4">
+        <a
+          href="https://github.com/PrinceAnumba/Google_AI_Studio_App_2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className="sm:text-xs" variant="">
+            <Icons.gitHub className="w-6 mr-2 sm:w-4" />
+            <span className="sm:hidden">Source Code</span>
+          </Button>
+        </a>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button
@@ -55,4 +56,4 @@ function Navbar () {
   );
 }
 
-export default Navbar
+export default Navbar;
