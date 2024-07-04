@@ -14,7 +14,7 @@ function Navbar() {
   const { setTheme } = useTheme();
 
   return (
-    <div className="flex flex-row justify-between items-center sticky top-8 bg-inherit">
+    <div className="flex flex-row justify-between items-center sticky top-0 py-4  px-4 bg-[#ffffff] dark:bg-[#100020] z-30">
       <Icons.aiStars className="w-12 sm:w-8" />
       <div className="flex items-center gap-8 sm:gap-4">
         <a
@@ -22,7 +22,7 @@ function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button className="sm:text-xs" >
+          <Button className="sm:text-xs">
             <Icons.gitHub className="w-6 mr-2 sm:w-4" />
             <span className="sm:hidden">Source Code</span>
           </Button>

@@ -94,10 +94,13 @@
   background-size: var(--s) var(--s);
 }
 
-.h-screen80 {
+.-screen80 {
   height: 93vh;
 }
 
+.footer{
+  margin-top: 40vh;
+}
 
 /* HTML: <div class="loader"></div> */
 /* .loader {
